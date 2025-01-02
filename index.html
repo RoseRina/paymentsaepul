@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daftar akun pembayaran MUHAMAD SAEPULLOH, lengkap dengan e-wallet, rekening bank, dan QRIS. Mudah untuk transfer.">
+    <title>Daftar Akun Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2B3A23; /* Hijau gelap */
+            margin: 0;
+            padding: 20px;
+            color: #FFEB3B; /* Kuning modern */
+        }
+        .container {
+            max-width: 750px;
+            margin: auto;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #FFEB3B; /* Kuning modern */
+            font-size: 2em;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            color: #FFEB3B; /* Kuning modern */
+        }
+        .warning-note {
+            text-align: center;
+            margin: 15px auto;
+            font-size: 14px;
+            font-weight: bold;
+            color: #D32F2F; /* Merah modern */
+            background-color: #FFCDD2; /* Latar merah muda modern */
+            border: 1px solid #5D4037; /* Coklat gelap */
+            padding: 10px;
+            border-radius: 8px;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            background: linear-gradient(45deg, #D32F2F, #5D4037); /* Merah modern ke coklat gelap */
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button img {
+            height: 30px;
+            filter: brightness(1.5) contrast(1.2);
+        }
+        button:hover {
+            background: linear-gradient(45deg, #333333, #8D6E63); /* Hitam ke coklat kayu */
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            background-color: #D32F2F; /* Merah modern */
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .qris-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qris-container img {
+            max-width: 300px;
+            width: 100%;
+            border: 1px solid #5D4037; /* Coklat gelap */
+            border-radius: 10px;
+        }
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Daftar Akun Pembayaran</h1>
+
+    <!-- Modern Note -->
+    <div class="modern-note">
+        <span class="icon">⚡</span>
+        <b>Catatan:</b> Klik <span class="highlight">Logo</span> untuk menyalin ke clipboard.
+    </div>
+
+    <!-- E-Wallet Section -->
+    <div>
+        <p class="section-title">📲 E-Wallet (a/n MUHAMAD SAEPULLOH):</p>
+        <div class="warning-note">
+            ⚠️ Nama akun DANA adalah <b>MUHAMAD SAEPULLOH</b>. Harap periksa sebelum transfer.
+        </div>
+        <button aria-label="Salin nomor DANA ke clipboard" onclick="copyToClipboard('085759340384')">
+            <img src="Logo/dana.png" alt="Logo DANA untuk transfer">
+        </button>
+        <button aria-label="Salin nomor GoPay ke clipboard" onclick="copyToClipboard('085759340384')">
+            <img src="Logo/gopay.png" alt="Logo GoPay untuk transfer">
+        </button>
+    </div>
+    <!-- Rekening Bank Section -->
+    <div>
+        <p class="section-title">🏦 Rekening Bank (a/n MUHAMAD SAEPULLOH):</p>
+        <button aria-label="Salin nomor Aladin Syariah ke clipboard" onclick="copyToClipboard('50199954096')">
+            <img src="Logo/aladin.png" alt="Logo Aladin Syariah untuk transfer">
+        </button>
+        <button aria-label="Salin nomor BCA ke clipboard" onclick="copyToClipboard('2311809611')">
+            <img src="Logo/bca.png" alt="Logo BCA untuk transfer">
+        </button>
+        <button aria-label="Salin nomor SeaBank ke clipboard" onclick="copyToClipboard('901337476051')">
+            <img src="Logo/seabank.png" alt="Logo SeaBank untuk transfer">
+        </button>
+    </div>
+
+    <!-- Confirmation -->
+    <div class="highlight-note">
+        ⚠️ <b>Harap konfirmasi</b> ke MUHAMAD SAEPULLOH setelah transfer melalui
+        <a href="https://wa.me/6285759340384?text=Halo%20Ferdi,%20saya%20telah%20melakukan%20transfer.%20Berikut%20bukti%20transaksi%20saya." target="_blank">📲 WhatsApp</a>
+    </div>
+</div>
+
+<script>
+    // Fungsi Copy-to-Clipboard
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            alert('Nomor berhasil disalin: ' + text);
+        }).catch(function(err) {
+            alert('Gagal menyalin nomor: ' + err);
+        });
+    }
+</script>
+</body>
+</html>

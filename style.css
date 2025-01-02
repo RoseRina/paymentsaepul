@@ -1,0 +1,144 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../image.png') no-repeat center center fixed;
+
+
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #FFC107; /* Kuning keemasan */
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Transparan putih */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #FFC107; /* Kuning keemasan */
+    font-size: 2em;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #FFC107; /* Kuning keemasan */
+}
+
+.warning-note {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #A62929; /* Merah tradisional */
+    background-color: #FBE4E4; /* Latar merah muda pucat */
+    border: 1px solid #5D4037; /* Coklat gelap */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    background: linear-gradient(45deg, #A62929, #5D4037); /* Merah tradisional ke coklat gelap */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button img {
+    height: 30px;
+    filter: saturate(1.5) brightness(1.2); /* Meningkatkan saturasi dan kecerahan */
+    border: 2px solid #FFC107; /* Border kuning keemasan */
+    border-radius: 5px; /* Sedikit rounded edges */
+    padding: 2px; /* Memberikan ruang di dalam border */
+}
+
+button img:hover {
+    filter: saturate(2) brightness(1.5); /* Tambah saturasi dan kecerahan lebih tinggi saat hover */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #333333, #8D6E63); /* Hitam ke coklat kayu */
+    transform: translateY(-2px);
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #A62929; /* Merah tradisional */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.qris-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qris-container img {
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid #5D4037; /* Coklat gelap */
+    border-radius: 10px;
+}
+
+.modern-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #A62929, #FFC107); /* Warna merah tradisional ke kuning keemasan */
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.modern-note .icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.modern-note .highlight {
+    color: #ffdd57;
+    font-weight: bold;
+    padding: 0 4px;
+}
+
+.highlight-note {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #A62929;
+    background-color: #FBE4E4;
+    border: 1px solid #5D4037;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.modern-note {
+    text-align: center;
+}
